@@ -27,8 +27,18 @@ Este instalador crea una estructura base con todos los archivos necesarios para 
 
 ```bash
 composer global require cehojac/antonella-installer
+```
 
-Asegúrate de que ~/.composer/vendor/bin (o ~/.config/composer/vendor/bin) esté en tu $PATH para poder usar el comando antonella desde cualquier parte.
+Asegúrate de que
+```bash
+ ~/.composer/vendor/bin
+```
+
+```bash
+ ~/.config/composer/vendor/bin
+```
+
+ esté en tu $PATH para poder usar el comando antonella desde cualquier parte.
 
 
 ---
