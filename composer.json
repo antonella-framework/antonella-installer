@@ -2,6 +2,7 @@
   "name": "cehojac/antonella-installer",
   "description": "Instalador CLI para Antonella Framework para WordPress",
   "bin": ["bin/antonella"],
+  "license": "MIT",
   "require": {
     "symfony/console": "^6.0",
     "symfony/process": "^6.0"
