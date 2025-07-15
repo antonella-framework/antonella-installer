@@ -1,9 +1,23 @@
+#!/usr/bin/env php
 <?php
 
-require_once dirname(__DIR__) . '/../../autoload.php';
+// Intenta cargar el autoload según distintos contextos
+$autoloadPaths = [
+    __DIR__ . '/../vendor/autoload.php', // si se usa localmente
+    __DIR__ . '/../../../autoload.php',  // si se usa globalmente
+];
 
-if (!class_exists(\Symfony\Component\Console\Application::class)) {
-    fwrite(STDERR, "❌ Symfony Console no está disponible. Ejecuta 'composer install'.\n");
+$found = false;
+foreach ($autoloadPaths as $path) {
+    if (file_exists($path)) {
+        require $path;
+        $found = true;
+        break;
+    }
+}
+
+if (!$found) {
+    fwrite(STDERR, "❌ No se encontró autoload.php. Ejecuta 'composer install'.\n");
     exit(1);
 }
 
