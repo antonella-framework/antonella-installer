@@ -6,6 +6,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Console\Input\InputArgument;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 
@@ -16,7 +17,8 @@ class NewProjectCommand extends Command
     protected function configure()
     {
         $this
-            ->setDescription('Crea un nuevo proyecto con Antonella Framework');
+            ->setDescription('Crea un nuevo proyecto con Antonella Framework')
+            ->addArgument('name', InputArgument::OPTIONAL, 'Nombre del nuevo proyecto');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
