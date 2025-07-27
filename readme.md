@@ -44,16 +44,13 @@ Asegúrate de que
 ---
 
 ##  ⚡ Uso
-bash
-Copiar
-Editar
+```bash
 antonella new nombre-del-proyecto
+```
 Esto hará:
 
 Descargar la plantilla oficial desde GitHub
 
 Extraerla en ./nombre-del-proyecto
-
-Crear .env
 
 Sugerir comandos siguientes como composer install, etc.
