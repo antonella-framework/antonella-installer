@@ -4,9 +4,9 @@
   "bin": ["bin/antonella"],
   "license": "MIT",
   "require": {
-    "symfony/console": "^6.0",
-    "symfony/process": "^6.0",
-    "symfony/filesystem": "^6.0"
+    "symfony/console": "^6.0 | ^7.0",
+    "symfony/process": "^6.0 | ^7.0",
+    "symfony/filesystem": "^6.0 | ^7.0"
   },
   "autoload": {
     "psr-4": {
@@ -14,3 +14,4 @@
     }
   }
 }
+  
