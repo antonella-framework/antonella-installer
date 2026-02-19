@@ -1,3 +1,4 @@
+[![Monthly Downloads](http://poser.pugx.org/cehojac/antonella-installer/d/monthly)](https://packagist.org/packages/cehojac/antonella-installer)
 # ⚙️ Antonella Installer
 
 Bienvenido al instalador oficial del **Antonella Framework para WordPress**.  
